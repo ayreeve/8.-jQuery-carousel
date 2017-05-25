@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     var $carouselList = $('#carousel ul');
-    setInterval(changeSlides, 2500);
+    setInterval(changeSlides, 3000);
 
     function changeSlides() {
         $carouselList.animate({
@@ -18,4 +18,14 @@ $(document).ready(function () {
             marginLeft: 0
         });
     }
+
+    $('#js-right-button').click(function () {
+        changeSlides();
+    });
+
+    $('#js-left-button').click(function () {
+        $carouselList.animate({
+            'marginLeft': 600
+        }, 800);
+    });
 });

@@ -2,6 +2,9 @@ body {
     margin: 0;
 }
 
+
+/* CAROUSEL */
+
 #carousel {
     width: 600px;
     height: 400px;
@@ -10,10 +13,6 @@ body {
     left: calc(50% - 300px);
     overflow: hidden;
     border: 3px solid #766b6b;
-}
-
-div {
-    display: inline-block;
 }
 
 ul {
@@ -31,4 +30,31 @@ li {
 
 img {
     width: 600px;
+}
+
+
+/* BUTTONS */
+
+button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 12.5px);
+    border: 0px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.left {
+    left: calc(30% - 12.5px);
+}
+
+.right {
+    right: calc(30% - 12.5px);
+}
+
+[class^="ion-chevron"] {
+    font-size: 25px;
+    color: #766b6b;
 }
