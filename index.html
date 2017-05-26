@@ -4,28 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <title>jQuery carousel</title>
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+    <h1>Simple jQuery slider</h1>
     <div id="carousel">
+
         <ul>
-            <li><img src="images/(1).jpg" alt=""></li>
-            <li><img src="images/(2).jpg" alt=""></li>
-            <li><img src="images/(3).jpg" alt=""></li>
-            <li><img src="images/(4).jpg" alt=""></li>
+            <li><img src="images/carousel/(1).jpg" alt=""></li>
+            <li><img src="images/carousel/(2).jpg" alt=""></li>
+            <li><img src="images/carousel/(3).jpg" alt=""></li>
+            <li><img src="images/carousel/(4).jpg" alt=""></li>
         </ul>
+
+        <button class="left" id="js-left-button">
+            <span class="ion-ios-arrow-left"></span>
+        </button>
+
+        <button class="right" id="js-right-button">
+            <span class="ion-ios-arrow-right"></span>
+        </button>
+
+        <div class="indicators">
+            <span class="ion-ios-circle-outline active"></span>
+            <span class="ion-ios-circle-outline"></span>
+            <span class="ion-ios-circle-outline"></span>
+            <span class="ion-ios-circle-outline"></span>
+        </div>
+
     </div>
 
-    <button class= "left" id="js-left-button">
-        <span class="ion-chevron-left"></span>
-    </button>
-
-    <button class= "right" id="js-right-button">
-        <span class="ion-chevron-right"></span>
-    </button>
+    <footer>
+        <p>&#169; 2017</p>
+    </footer>
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
