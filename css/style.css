@@ -1,35 +1,52 @@
 body {
-    margin: 0;
+    margin-top: 48px;
+    margin-bottom: 20px;
+    background-image: url(/images/background/natural_white.png);
+    font-family: 'Sacramento', cursive;
+}
+
+
+/* TITLE */
+
+h1 {
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 400;
+    color: #4e565c;
 }
 
 
 /* CAROUSEL */
 
 #carousel {
-    width: 600px;
-    height: 400px;
-    position: absolute;
-    top: calc(50% - 200px);
+    max-width: 600px;
+    max-height: 400px;
+    position: relative;
+    top: calc(50% - 160px);
     left: calc(50% - 300px);
     overflow: hidden;
-    border: 3px solid #766b6b;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 20px 20px #ccc;
+    box-shadow: 10px 20px 50px #ccc;
 }
 
 ul {
-    width: 2400px;
+    max-width: 2400px;
     margin: 0;
     padding: 0;
 }
 
 li {
-    width: 600px;
-    height: 400px;
+    max-width: 600px;
+    max-height: 400px;
     list-style: none;
     float: left;
 }
 
 img {
-    width: 600px;
+    height: auto;
+    max-width: 600px;
+    display: block;
 }
 
 
@@ -39,22 +56,51 @@ button {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: calc(50% - 12.5px);
+    top: calc(50% - 25px);
     border: 0px;
-    border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
 }
 
 .left {
-    left: calc(30% - 12.5px);
+    left: 3%;
 }
 
 .right {
-    right: calc(30% - 12.5px);
+    right: 3%;
 }
 
-[class^="ion-chevron"] {
-    font-size: 25px;
-    color: #766b6b;
+[class^="ion-ios-arrow-"] {
+    font-size: 40px;
+    color: #4e565c;
+}
+
+
+/* INDICATORS */
+
+.indicators {
+    position: absolute;
+    height: 15px;
+    top: 90%;
+    left: calc(50% - 31px);
+    font-size: 15px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.active {
+    background-color: #4e565c;
+    border-radius: 50%;
+}
+
+
+/* FOOTER */
+
+P {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 800;
+    color: #4e565c;
 }
