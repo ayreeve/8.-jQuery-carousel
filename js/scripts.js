@@ -25,14 +25,14 @@ $(document).ready(function () {
         $firstItem.before($lastItem);
         $carouselList.css({
             marginRight: +600
-        });
+        }, 800);
     }
 
     $('#js-left-button').click(function () {
-        moveLastSlide();
         $carouselList.animate({
-            'marginLeft': 0
-        }, 800);
+            'marginRight': -600
+        });
+        moveLastSlide();
     });
 
     $('#js-right-button').click(function () {
