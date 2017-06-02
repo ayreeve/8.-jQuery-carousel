@@ -1,3 +1,10 @@
+/* GENERAL */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     margin-top: 48px;
     margin-bottom: 20px;
@@ -31,7 +38,7 @@ h1 {
 }
 
 ul {
-    max-width: 2400px;
+    width: 2400px;
     margin: 0;
     padding: 0;
 }
@@ -45,7 +52,7 @@ li {
 
 img {
     height: auto;
-    max-width: 600px;
+    max-width: 100%;
     display: block;
 }
 
@@ -74,6 +81,13 @@ button {
 [class^="ion-ios-arrow-"] {
     font-size: 40px;
     color: #4e565c;
+    -webkit-transition: linear .5;
+    transition: linear .5;
+}
+
+[class^="ion-ios-arrow-"]:hover {
+    -webkit-transform: scale (1.2);
+    transform: scale (1.2);
 }
 
 
@@ -89,11 +103,6 @@ button {
     overflow: hidden;
 }
 
-.active {
-    background-color: #4e565c;
-    border-radius: 50%;
-}
-
 
 /* FOOTER */
 
@@ -103,4 +112,73 @@ P {
     font-size: 1em;
     font-weight: 800;
     color: #4e565c;
+}
+
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+    #carousel {
+        max-width: 500px;
+        max-height: 350px;
+        position: relative;
+        top: calc(50% - 100px);
+        left: calc(50% - 250px);
+    }
+    img {
+        width: 88%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #carousel {
+        max-width: 430px;
+        height: 250px;
+        position: relative;
+        top: calc(50% - 125px);
+        left: calc(50% - 215px);
+    }
+    img {
+        width: 73%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    #carousel {
+        max-width: 330px;
+        height: 180px;
+        position: relative;
+        top: calc(50% - 90px);
+        left: calc(50% - 160px);
+    }
+    img {
+        width: 55%;
+        height: auto;
+    }
+    .indicators {
+        top: 85%;
+        font-size: 15px;
+    }
+    p {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 390px) {
+    #carousel {
+        max-width: 250px;
+        height: 160px;
+        position: relative;
+        top: calc(50% - 80px);
+        left: calc(50% - 125px);
+    }
+    img {
+        width: 42%;
+        height: auto;
+    }
 }
