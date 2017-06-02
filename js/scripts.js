@@ -2,12 +2,14 @@
 
 $(document).ready(function () {
     var $carouselList = $('#carousel ul');
-    setInterval(changeSlides, 3000);
+    /*
+        setInterval(changeSlides, 2000);
+    */
 
     function changeSlides() {
         $carouselList.animate({
-            'marginLeft': -600
-        }, 800, moveFirstSlide);
+            marginLeft: -600
+        }, 700, moveFirstSlide);
     }
 
     function moveFirstSlide() {
@@ -24,22 +26,21 @@ $(document).ready(function () {
             $lastItem = $carouselList.find('li:last');
         $firstItem.before($lastItem);
         $carouselList.css({
-            marginRight: +600
-        }, 800);
+            marginLeft: -600
+        });
     }
 
     $('#js-left-button').click(function () {
         $carouselList.animate({
-            'marginRight': -600
-        });
-        moveLastSlide();
+            marginLeft: 0
+        }, 700, moveLastSlide);
     });
 
     $('#js-right-button').click(function () {
         changeSlides();
     });
 
-    var $indicators = $('.indicators ion-ios-circle-outline');
+/*    var $indicators = $('.indicators ion-ios-circle-outline');
     $indicators.each(function (index, element) {
 
         $('$indicators').click(function () {
@@ -48,6 +49,6 @@ $(document).ready(function () {
             changeSlides(index);
         });
 
-    });
+    });*/
 
 });
