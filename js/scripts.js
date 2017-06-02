@@ -2,9 +2,8 @@
 
 $(document).ready(function () {
     var $carouselList = $('#carousel ul');
-    /*
-        setInterval(changeSlides, 2000);
-    */
+
+    setInterval(changeSlides, 2000);
 
     function changeSlides() {
         $carouselList.animate({
@@ -40,15 +39,15 @@ $(document).ready(function () {
         changeSlides();
     });
 
-/*    var $indicators = $('.indicators ion-ios-circle-outline');
-    $indicators.each(function (index, element) {
+    /*    var $indicators = $('.indicators ion-ios-circle-outline');
+        $indicators.each(function (index, element) {
 
-        $('$indicators').click(function () {
-            $(this).removeClass('active');
-            $(this).addClass('active');
-            changeSlides(index);
-        });
+            $('$indicators').click(function () {
+                $(this).removeClass('active');
+                $(this).addClass('active');
+                changeSlides(index);
+            });
 
-    });*/
+        });*/
 
 });
