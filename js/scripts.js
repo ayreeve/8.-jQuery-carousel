@@ -49,17 +49,6 @@ $(document).ready(function () {
         changeSlides();
     });
 
-    /*    var $indicators = $('.indicators ion-ios-circle-outline');
-        $indicators.each(function (index, element) {
-
-            $('$indicators').click(function () {
-                $(this).removeClass('active');
-                $(this).addClass('active');
-                changeSlides(index);
-            });
-
-        });*/
-
 });
 
 $(window).resize(function () {

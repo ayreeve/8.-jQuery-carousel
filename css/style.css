@@ -44,15 +44,14 @@ ul {
 }
 
 li {
-    max-width: 600px;
-    max-height: 400px;
+    width: 600px;
     list-style: none;
     float: left;
 }
 
 img {
-    height: auto;
     max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -91,57 +90,25 @@ button {
 }
 
 
-/* INDICATORS */
-
-.indicators {
-    position: absolute;
-    height: 15px;
-    top: 90%;
-    left: calc(50% - 31px);
-    font-size: 15px;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-
-/* FOOTER */
-
-P {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 1em;
-    font-weight: 800;
-    color: #4e565c;
-}
-
-
 /* MEDIA QUERIES*/
 
 @media (max-width: 768px) {
     #carousel {
         max-width: 500px;
-        max-height: 350px;
+        max-height: 360px;
         position: relative;
-        top: calc(50% - 100px);
+        top: calc(50% - 180px);
         left: calc(50% - 250px);
-    }
-    img {
-        width: 88%;
-        height: auto;
     }
 }
 
 @media (max-width: 576px) {
     #carousel {
-        max-width: 430px;
-        height: 250px;
+        max-width: 450px;
+        max-height: 320px;
         position: relative;
-        top: calc(50% - 125px);
-        left: calc(50% - 215px);
-    }
-    img {
-        width: 73%;
-        height: auto;
+        top: calc(50% - 160px);
+        left: calc(50% - 225px);
     }
 }
 
@@ -150,35 +117,20 @@ P {
         font-size: 2em;
     }
     #carousel {
-        max-width: 330px;
-        height: 180px;
+        max-width: 350px;
+        max-height: 240px;
         position: relative;
-        top: calc(50% - 90px);
-        left: calc(50% - 160px);
-    }
-    img {
-        width: 55%;
-        height: auto;
-    }
-    .indicators {
-        top: 85%;
-        font-size: 15px;
-    }
-    p {
-        font-size: .8em;
+        top: calc(50% - 120px);
+        left: calc(50% - 175px);
     }
 }
 
 @media (max-width: 390px) {
     #carousel {
         max-width: 250px;
-        height: 160px;
+        max-height: 160px;
         position: relative;
         top: calc(50% - 80px);
         left: calc(50% - 125px);
-    }
-    img {
-        width: 42%;
-        height: auto;
     }
 }
