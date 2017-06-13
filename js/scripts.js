@@ -2,11 +2,11 @@
 
 $(document).ready(function () {
     var $carouselList = $('#carousel ul'),
-        slideWidth = 600;
+        $slideWidth = 600;
 
     function changeSlides() {
         $carouselList.animate({
-            marginLeft: -(slideWidth)
+            marginLeft: -($slideWidth)
         }, 700, moveFirstSlide);
     }
 
@@ -24,18 +24,18 @@ $(document).ready(function () {
             $lastItem = $carouselList.find('li:last');
         $firstItem.before($lastItem);
         $carouselList.css({
-            marginLeft: -(slideWidth)
+            marginLeft: -($slideWidth)
         });
     }
 
-    var interval = setInterval(changeSlides, 2000);
+    var $interval = setInterval(changeSlides, 2000);
 
     $('#carousel').mouseenter(function () {
-        clearInterval(interval);
+        clearInterval($interval);
     });
 
     $('#carousel').mouseleave(function () {
-        interval = setInterval(changeSlides, 2000);
+        $interval = setInterval(changeSlides, 2000);
     });
 
     $('#js-left-button').click(function () {
@@ -52,5 +52,5 @@ $(document).ready(function () {
 });
 
 $(window).resize(function () {
-    slideWidth = $('#carousel').outerWidth();
+    $slideWidth = $('#carousel').outerWidth();
 });
